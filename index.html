@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Portfolio</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+
+    <body>
+        <nav class="bg-gray-800 sticky top-0">
+            <div class="mx-auto max-w-7xl px-3 py-2">
+                <div class="flex justify-end">
+                    <a href="#projects" class="px-3 py-2 text-gray-300 rounded-md font-medium hover:bg-white/5 hover:text-white">Projects</a>
+                    <a href="#about-me" class="px-3 py-2 text-gray-300 rounded-md font-medium hover:bg-white/5 hover:text-white ml-3">About Me</a>
+                    <a href="#contacts" class="px-3 py-2 text-gray-300 rounded-md font-medium hover:bg-white/5 hover:text-white ml-3">Contact Me</a>
+                </div>
+            </div>
+        </nav>
+        <div class="bg-gray-100 py-15 px-8" id="about-me">
+            <div class="flex flex-row justify-between">
+                <div class="flex flex-col justify-center">
+                    <div class="">
+                        <h1 class="text-6xl font-medium text-black mb-3">Hello, I'm</h1>
+                        <h1 class="text-6xl font-medium text-purple-800">Jack Zhou</h1>
+                    </div>
+                    <div class="max-w-2xl py-4">
+                        <p class="mb-4"> A 2nd year student pursuing a bachelor's in electrical engineering and computing. Fascinated by the unbounded potential of technology, my interests include software development, robotics, and AI.</p>
+                        <button class="py-2 px-4 bg-gray-800 text-white rounded-md cursor-pointer">Contact Me</button>
+                    </div>
+                </div>
+
+                <div class="flex mx-auto bg-white h-[500px] w-[350px] justify-center items-center">
+                    <h1 class="text-6xl">IMAGE</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-10 px-8" id="projects">
+            <h1 class="text-5xl font-semibold text-black mb-8">Projects.</h1>
+            <div class="flex flex-row justify-evenly text-center">
+                <div class="flex flex-col items-center max-w-sm">
+                    <div class="flex justify-center items-center max-w-2xl bg-gray-100 h-[300px] w-[200px] mb-3">
+                        <p class="text-2xl">IMAGE</p>
+                    </div>
+                    <h3 class="text-lg font-semibold text-purple-800">Brainwave Reader</h3>
+                    <p class="text-sm">A .NET application that reads and processes streamed bluetooth data from a Neurosky chip.</p>
+                </div>
+                <div class="flex flex-col items-center max-w-sm">
+                    <div class="flex justify-center items-center max-w-2xl bg-gray-100 h-[300px] w-[200px] mb-3">
+                        <p class="text-2xl">IMAGE</p>
+                    </div>
+                    <h3 class="text-lg font-semibold text-purple-800">Autonomous Drive</h3>
+                    <p class="text-sm">Autonomous movement software using pure pursuit algorithm for differential drive.</p>
+                </div>
+                <div class="flex flex-col items-center max-w-sm">
+                    <div class="flex justify-center items-center max-w-2xl bg-gray-100 h-[300px] w-[200px] mb-3">
+                        <p class="text-2xl">IMAGE</p>
+                    </div>
+                    <h3 class="text-lg font-semibold text-purple-800">Soundboard</h3>
+                    <p class="text-sm">Soundboard application that can record and play sounds using Java Swing</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-gray-800" id="contacts">
+            <div class="max-w-7xl px-6 py-4">
+                <h3 class="text-white text-lg font-semibold mb-1 px-2">Contacts</h3>
+                <div class="flex flex-row text-gray-300 text-sm items-center">
+                    <a class="mr-3 hover:bg-white/5 hover:text-white px-2 py-1 rounded-md" href="mailto:jackzhoupersonal@gmail.com">Email</a>
+                    <div class="h-1 w-1 rounded-full bg-white mr-3"></div>
+                    <a class="mr-3 hover:bg-white/5 hover:text-white px-2 py-1 rounded-md" href="https://github.com/jzhou077" target="_blank" rel="noopener noreferrer">Github</a>
+                    <div class="h-1 w-1 rounded-full bg-white mr-3"></div>
+                    <a class="mr-3 hover:bg-white/5 hover:text-white px-2 py-1 rounded-md" href="https://www.linkedin.com/in/jack-zhou-95a15a253" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
