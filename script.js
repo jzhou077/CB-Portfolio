@@ -102,11 +102,22 @@ nextProjBtn.addEventListener("click", (e) => {
 });
 
 // Scroll animations
-const createObserver = (ele, translateProperty, targetPosition, step) => {
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            
-        })
-    });
+const options = {
+    root: null,
+    threshold: 0.3
 };
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            const elem = entry.target;
+            elem.classList.remove('opacity-0');
+            observer.unobserve(elem);
+        }
+    });
+}, options);
+
+const toAnimate = document.querySelectorAll(".opacity-0");
+for (elem of toAnimate) {
+    observer.observe(elem);
+}
