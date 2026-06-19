@@ -104,7 +104,7 @@ nextProjBtn.addEventListener("click", (e) => {
 // Scroll animations
 const options = {
     root: null,
-    threshold: 0.3
+    threshold: 0.5
 };
 
 const observer = new IntersectionObserver((entries, observer) => {
